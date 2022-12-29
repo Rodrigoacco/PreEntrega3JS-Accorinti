@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos/style.css">
+    <title>Document</title>
+</head>
+<body class="modo-claro">
+
+    <nav>
+        <button id="claro-oscuro">Cambiar modo</button>
+        <button id="logout">
+            Cerrar sesión
+        </button>       
+    </nav>
+
+    <main>
+        <div class="inicio">
+            <div class="container-login">
+                <h2>
+                    Inicie sesión
+                </h2>
+                <form id="login">
+                    <label>
+                        <input type="text" placeholder="Usuario" id="input-user" autocomplete="off">
+                    </label>
+                    <label>
+                        <input type="password" placeholder="Contraseña" id="input-pass" autocomplete="off">
+                    </label>
+                    <label>
+                        <input type="submit" value="Ingresar">
+                    </label>
+                    <p id="logint">
+                        El usuario o la contraseña son incorrectas.
+                    </p>
+                </form>            
+            </div>
+        </div>
+        <div class="buscador">
+            <input type="text" name="search" placeholder="Buscar" id="search" autocomplete="off">
+        </div>
+        <div class="product">
+        </div>
+    </main>
+    <script src="/index.js"></script>
+</body>
+</html>
